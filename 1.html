@@ -16,26 +16,45 @@
             border-width: 10px;
             margin: 10px;
             box-sizing: border-box;
-            display: list-item;
-
+            float: left;
         }
 
         div.container {
             background-color: green;
             width: 800px;
-            height: 800px;
+            /*height: 100px;*/
             z-index: -1;
+            /*float: left;*/
+            display: flex;
+        }
+
+        div.first {
+            overflow: auto;
+        }
+
+        div.second {
+            /*margin-left: auto;*/
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <div class="test" style="z-index: 1" draggable="true">
-        一
+    <div class="test first" style="z-index: 1" draggable="true">
+        一dfaaffas
+        一dfaaffas
+        一dfaaffas
+        一dfaaffas
+        一dfaaffas
+        一dfaaffas
+        一dfaaffas
+        一dfaaffas
+
+
     </div>
-    <div class="test" style="z-index: 2">
+    <div class="test second" style="z-index: 2">
         二
     </div>
+
 </div>
 
 
