@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <!--    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>-->
+    <style>
+        div.test {
+            background-color: grey;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            border-style: solid;
+            border-color: red;
+            border-width: 10px;
+            margin: 10px;
+            box-sizing: border-box;
+            display: list-item;
+
+        }
+
+        div.container {
+            background-color: green;
+            width: 800px;
+            height: 800px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="test" style="z-index: 1" draggable="true">
+        一
+    </div>
+    <div class="test" style="z-index: 2">
+        二
+    </div>
+</div>
+
+
+</body>
+</html>
