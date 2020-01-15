@@ -6,6 +6,17 @@
     <title>Title</title>
     <!--    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>-->
     <style>
+        div.container {
+            background-color: green;
+            width: 500px;
+            height: 500px;
+            z-index: -1;
+            /*float: left;*/
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: flex-end;
+        }
+
         div.test {
             background-color: grey;
             width: 100px;
@@ -16,44 +27,31 @@
             border-width: 10px;
             margin: 10px;
             box-sizing: border-box;
-            float: left;
+            position: sticky;
+            top: 50px
         }
 
-        div.container {
-            background-color: green;
-            width: 800px;
-            /*height: 100px;*/
-            z-index: -1;
-            /*float: left;*/
-            display: flex;
-        }
+
 
         div.first {
-            overflow: auto;
+
         }
 
         div.second {
-            /*margin-left: auto;*/
+            align-self: center;
         }
     </style>
 </head>
 <body>
 <div class="container">
     <div class="test first" style="z-index: 1" draggable="true">
-        一dfaaffas
-        一dfaaffas
-        一dfaaffas
-        一dfaaffas
-        一dfaaffas
-        一dfaaffas
-        一dfaaffas
-        一dfaaffas
-
-
+        一safdsa
     </div>
     <div class="test second" style="z-index: 2">
         二
     </div>
+
+
 
 </div>
 
